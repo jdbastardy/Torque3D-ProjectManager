@@ -9,14 +9,17 @@ The Torque 3D Project Manager may be used to create new projects based on existi
 
 Building Qt for Windows
 -----------------------
-Before you may compile the Project Manager you will need to build Qt 5.1 (rc 1).  Please follow the directions at [Installing Qt for Windows](http://qt-project.org/doc/qt-4.8/install-win.html) up to Step 4.
+Before you may compile the Project Manager you will need to download Qt 5.1 (rc 1) and install it in your system.
+
+Be sure to use the version built with the correct Visual Studio version (the one installed in your system). It should not be a problem wether you use the OpenGL version or the ANGLE one.
+
 
 Building Project Manager for Windows
 ------------------------
-1. Open a Visual Studio Command Prompt (2012).
+1. Open a Visual Studio Command Prompt.
 2. Go to the `Torque3D-ProjectManager/buildFiles/VisualStudio` directory.
 3. Type `qmake` and press return.  This will create a Visual Studio project file.
-4. Start VS2010 and load the Project Manager project.
+4. Start VS2012 and load the Project Manager project.
 5. Build a release version.  You will be asked to save the solution file before the compilation will begin.  Save with the default name.
 6. `Project Manager.exe` will be created in `Torque3D-ProjectManager/bin/win32`.
 
@@ -28,7 +31,7 @@ Setting Up Project Manager under Windows
 ----------------------------------------
 1. Remove the existing `Torque 3D Toolbox.exe` file and the four Qt .dll files from your Torque 3D repo.
 2. Copy `Project Manager.exe` and `projects.xml` from `bin/win32` into your Torque 3D repo.
-3. Copy `QtCore4.dll`, `QtGui4.dll`, `QtNetwork4.dll` and `QtXml4.dll` from where they were compiled (usually in the Qt's `lib` directory) into the Torque 3D repo.
+3. Copy `QtCore5.dll`, `QtGui5.dll`, `QtNetwork5.dll`, `QtWidgets5.dll`  and `QtXml5.dll` from where the qt installation directory (usually in the Qt's `lib` directory) into the Torque 3D repo.
 
 Using Project Manager
 ---------------------
