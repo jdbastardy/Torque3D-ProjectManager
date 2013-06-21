@@ -1,7 +1,9 @@
 Torque3D-ProjectManager
 =======================
 
-MIT Licensed version of the [Torque 3D](http://www.garagegames.com/products/torque-3d) Project Manager from [GarageGames](http://www.garagegames.com)
+MIT Licensed version of the [Torque 3D](http://www.garagegames.com/products/torque-3d) Project Manager from [GarageGames](http://www.garagegames.com).
+
+This fork was born in order to make this project build with Qt5.
 
 More Information
 ----------------
